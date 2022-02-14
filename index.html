@@ -1,0 +1,162 @@
+<!--By: Matheus Freitas 
+    Github : https://github.com/matheusfximenes
+    Projeto feito em 14 de janeiro de 2022.
+    Tem o intuito de fazer um desafio de Front-End. 
+    Para esse teste não pode usar Framework e nem ajudas como Boot ou
+    outros meios de facilitar apenas CSS, HTML e um pouco de JS para 
+    considerar umas constantes. 
+-->
+
+<!-- Proyecto realizado el 14 de enero de 2022.
+    Se pretende hacer un reto Front-End.
+    Para esta prueba, no puede usar Framework o ayuda como Boot o
+    otros medios de facilitar solo CSS, HTML y un poco de JS para
+    considerar algunas constantes.
+-->
+    
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Matheus Freitas Ximenes">
+    <title>InboundCycle</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="container-header container-grid">
+      <!-- Logotype -->
+      <img src="img/inboundcycle-logo.png" class="logotype" alt="InboundCycle"/>
+      <!-- Social Icons -->
+      <ul class="social-icons">
+        <li>
+          <a
+            href="https://www.facebook.com/InboundCycle"
+            target="_blank"
+            title="Visita nuestra cuenta de Facebook de InboundCycle"
+          >
+            <i class="fa fa-facebook-square"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://twitter.com/inboundcycle"
+            target="_blank"
+            title="Visitar el Twitter de InboundCycle"
+          >
+            <i class="fa fa-twitter-square"></i>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/company/2387654"
+            target="_blank"
+            title="Visitar el LinkedIn de InboundCycle"
+          >
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <!-- Separator Image -->
+    <div class="separator-image container-grid">
+      <img src="./img/separator-image.jpg" alt="slider image separator" />
+    </div>
+    <!-- Container -->
+    <div class="wrapper container-grid-wrapper">
+      <section class="wrapper-grid">
+        <!-- Ebook -->
+        <img
+          src="img/ebook.png"
+          class="ebook"
+          alt="E-book genérico de InboundCycle"
+        />
+        <!-- Titles -->
+        <h1> Lorem ipsum dolor sit amet elit consectetur adipiscing eu ipsum porttitor ligula donec </h1>
+        <h2> Lorem ipsum dolor sit amet consectetur adipiscing elit eu porttitor ligula donec </h2>
+        <!-- Body text -->
+        <p>  Duis blandit tempor facilisis. Curabitur ipsum turpis,
+          <a href="#" title="Enlace de prueba">venenatis</a> et massa id, congue dignissim nibh. Praesent vitae 
+          justo vel metus faucibus vehicula. Donec vitae semper eros, et viverra leo. Quisque maximus semper mi, 
+          sit amet vehicula quam ultricies eu. Nullam euismod orci sed erat blandit vulputate nec vitae arcu. 
+          Integer nec imperdiet sem. Nullam a nibh rhoncus, tincidunt arcu eu, porta erat. Vestibulum ante ipsum 
+          primis in faucibus orci luctus et ultrices posuere cubilia curae semper eros, et viverra leo.
+        </p>
+        <!-- Emphasizes -->
+        <div class="emphasizes">
+          Rellena el formulario para descargar la guía
+          <i class="fa fa-long-arrow-right"></i>
+        </div>
+      </section>
+      <!-- Aside -->
+      <aside>
+        <!-- Download form -->
+        <form class="contact-form">
+          <h3>Descargar e-book gratis</h3>
+          <fieldset>
+            <input type="text" name="name" placeholder="Nombre" title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required/>
+            <input type="text" name="surname" placeholder="Apellidos" title="Apellido sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required/>
+            <input type="email" name="email" placeholder="Email" title="Email incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"  required/>
+          </fieldset>
+          <fieldset>
+            <label
+              ><input type="checkbox" name="legal" title="Tienes que aceptar nuestras políticas" required/> Acepto la
+              <a href="#">política de privacidad</a>*
+            </label>
+
+            <label
+              ><input type="checkbox" name="subscription"/> Suscríbeme al blog
+            </label>
+
+          </fieldset>
+          
+          <button id="myBtn" type="submit">Descargar</button>
+        </form>
+      </aside>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-frame">
+        <!-- Logotype -->
+        <img
+          src="img/inboundcycle-logo-small.png"
+          class="logotype"
+          alt="InboundCycle"
+        />
+        <!-- Legal menu -->
+        <nav>
+          <ul>
+            <li>
+              <a href="#" title="Lea nuestra política de privacidad"
+                >Política de Privacidad&nbsp;&nbsp;&nbsp;|</a
+              >
+            </li>
+            <li><a href="#" title="Lea el aviso legal">By: Matheus Freitas |GITHUB: https://github.com/matheusfximenes</a></li>
+          </ul>
+        </nav>
+        <!-- Copyright -->
+        <small>InboundCycle &#9400;2015&nbsp;&nbsp;&nbsp;|</small>
+      </div>
+    </footer>
+    <!-- Pop-up -->
+    <div id="myPopup" class="popup">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="caption">
+            <img
+              src="img/ebook.png"
+              class="ebook"
+              alt="E-book genérico de InboundCycle"
+            />
+            <h1>
+              ¡Muchas Gracias!
+            </h1>
+      </div>
+    </div>
+  </body>
+  <script src="./js/app.js"></script>
+
+</html>
